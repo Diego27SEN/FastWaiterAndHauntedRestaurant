@@ -8,10 +8,13 @@ public class FoodList : ScriptableObject
     {
         "Ceviche",
         "Anticucho",
-        "Pollo a la Brasa",
         "Arroz con pollo",
-        "Picarones",
-        "Lomo Saltado",
-        "Causa Limeña",
+        "Aji de gallina",
+        "Pollo ala brasa",
+        "inka cola",
+        "lomo saltado",
+        "Calodo de gallina",
+        "Causa rellena",
+        "Chaufa de pollo",
     };
 }
