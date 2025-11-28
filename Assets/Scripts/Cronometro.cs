@@ -2,19 +2,21 @@ using UnityEngine;
 
 public class Cronometro : MonoBehaviour, IGestionCronometro
 {
-    [SerializeField] private float Tiempo;
+    [SerializeField] private float tiempo;
 
-     void Update()
+    public float Tiempo
+    {
+        get => tiempo;
+        set => tiempo = value;
+    }
+
+    void Update()
     {
         GestionCronometro();
     }
     public void GestionCronometro()
     {
-        Tiempo += Time.deltaTime;
-        Tiempo = Mathf.Min(Tiempo, 420f);
-        if (Tiempo >= 420f)
-        {
-            Debug.Log("El Juego Termino");
-        }
+        tiempo += Time.deltaTime;
+        tiempo = Mathf.Min(tiempo, 420f);
     }
 }

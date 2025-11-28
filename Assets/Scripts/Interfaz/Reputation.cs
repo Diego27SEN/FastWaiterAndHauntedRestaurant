@@ -16,6 +16,6 @@ public class Reputation : MonoBehaviour
     public void SubtractReputation(int amount)
     {
         reputation -= amount;
-        reputation = Mathf.Max(reputation, 0); // Evita valores negativos
+        reputation = Mathf.Max(reputation, 0);
     }
 }
