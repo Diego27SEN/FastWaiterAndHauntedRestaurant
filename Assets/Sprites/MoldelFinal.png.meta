@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 835cf91d9c97c8b43a333f563eb6507c
+guid: 3fe4ff87db19ed546836bd5fe99d9b3b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 44324130981857345
-    second: cocina_0
+      213: 5402158509797571192
+    second: MoldelFinal_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cocina_0
+      name: MoldelFinal_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 730
-        height: 410
+        width: 1536
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 148c622ff887d9000800000000000000
-      internalID: 44324130981857345
+      spriteID: 87a76d4fa8258fa40800000000000000
+      internalID: 5402158509797571192
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      cocina_0: 44324130981857345
+      MoldelFinal_0: 5402158509797571192
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
