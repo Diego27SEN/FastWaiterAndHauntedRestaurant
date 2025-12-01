@@ -30,7 +30,7 @@ public class Mesero : MonoBehaviour
     public void Cooldawn()
     {
 
-        if (contador >= 40f && controllerMesero.MoveSpeed == 2)
+        if (contador >= 20f && controllerMesero.MoveSpeed == 2)
         {
             controllerMesero.MoveSpeed++;
             contador = 0;

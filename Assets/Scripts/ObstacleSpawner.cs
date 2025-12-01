@@ -22,6 +22,7 @@ public class ObstacleSpawner : MonoBehaviour
         Transform spawnPoint = spawnPoints[randomIndex];
 
         currentObstacle = Instantiate(obstaclePrefab, spawnPoint.position, Quaternion.identity); // Instanciar el obstáculo
+
         Destroy(currentObstacle, obstacleLifetime);// Destruirlo luego del tiempo configurado
     }
 
