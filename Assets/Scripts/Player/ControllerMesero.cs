@@ -108,7 +108,6 @@ public class ControllerMesero : MonoBehaviour
                             {
                                 pedidoActualMesero = npc.PedidoActual;
                                 Debug.Log("Pedido recibido: " + pedidoActualMesero);
-
                             }
                         }
                         else
@@ -144,7 +143,6 @@ public class ControllerMesero : MonoBehaviour
                     npc.PedidoEntregado = true;
                     npc.GetComponent<ControllerNPC>().RecibioComida = true;
                     Debug.Log("Pedido entregado al NPC: " + platoListoParaEntregar);
-
 
                     // Actualiza la reputación global usando la reputación del NPC
                     if (reputationSystem != null)
