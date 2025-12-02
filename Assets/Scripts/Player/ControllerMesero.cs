@@ -12,6 +12,7 @@ public class ControllerMesero : MonoBehaviour
     private float degree = 90;
     [SerializeField] private float moveSpeed = 3f;
     [SerializeField] private Mesero mesero;
+    private Animator playerAnimator;
 
     private string pedidoActualMesero;
 
@@ -33,6 +34,8 @@ public class ControllerMesero : MonoBehaviour
         var gm = GameObject.Find("GameManager");
         if (gm != null)
             reputationSystem = gm.GetComponent<Reputation>();
+
+        playerAnimator = GetComponent<Animator>();
     }
 
     private void OnEnable()
@@ -129,6 +132,7 @@ public class ControllerMesero : MonoBehaviour
                                 chef.deliverFood(pedidoActualMesero);
                                 platoListoParaEntregar = pedidoActualMesero; // Guarda el plato listo
                                 pedidoActualMesero = "";
+                                playerAnimator.SetBool("HasOrder", true);
                                 Debug.Log("Plato listo para entregar al NPC: " + platoListoParaEntregar);
                             }
                         }
@@ -143,6 +147,8 @@ public class ControllerMesero : MonoBehaviour
                     npc.PedidoEntregado = true;
                     npc.GetComponent<ControllerNPC>().RecibioComida = true;
                     Debug.Log("Pedido entregado al NPC: " + platoListoParaEntregar);
+                    playerAnimator.SetBool("HasOrder", false);
+                    playerAnimator.SetTrigger("Delivering");
 
                     // Actualiza la reputación global usando la reputación del NPC
                     if (reputationSystem != null)
