@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     {
         float moveX = Input.GetAxis("Horizontal");
         float moveY = Input.GetAxis("Vertical");
-        moveInput = new Vector2(moveX, moveY).normalized;
+        moveInput = new Vector2(moveX, moveY).normalized;//RIGIBODY
 
         playerAnimator.SetFloat("Horizontal", moveX);
         playerAnimator.SetFloat("Vertical", moveY);

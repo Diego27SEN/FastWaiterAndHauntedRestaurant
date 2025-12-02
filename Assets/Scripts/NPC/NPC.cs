@@ -77,4 +77,16 @@ public class NPC : MainNPC
             ultimoNivelMostrado = nivel;
         }
     }
+    public void FoodDelivered()
+    {
+        pedidoEntregado = true;
+        GetComponent<ControllerNPC>().RecibioComida = true;
+    }
+    //platoListoParaEntregar == npc.PedidoActual && !npc.PedidoEntregado
+
+    public bool CheckIfAvalible(string tryFood)
+    {
+        return tryFood == PedidoActual && !PedidoEntregado;
+    }
+
 }

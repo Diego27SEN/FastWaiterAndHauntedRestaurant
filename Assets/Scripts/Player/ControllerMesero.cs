@@ -95,11 +95,13 @@ public class ControllerMesero : MonoBehaviour
         {
             if (collider.CompareTag("NPC") || collider.CompareTag("CHEF"))
             {
-                Vector2 objDir = (collider.transform.position - transform.position).normalized;
+               /* Vector2 objDir = (collider.transform.position - transform.position).normalized;
                 float producto = Vector2.Dot(objDir, dir);
                 float toRadians = Mathf.Acos(producto);
-                float toDegrees = toRadians * Mathf.Rad2Deg;
-                if (toDegrees <= degree)
+                float toDegrees = toRadians * Mathf.Rad2Deg;*/
+                bool IsLooking = IsLookingAt(degree, collider.transform.position);
+
+                if (IsLooking)
                 {
                     if (collider.CompareTag("NPC"))
                     {
@@ -142,22 +144,34 @@ public class ControllerMesero : MonoBehaviour
             if (collider.CompareTag("NPC"))
             {
                 NPC npc = collider.GetComponent<NPC>();
-                if (npc != null && platoListoParaEntregar == npc.PedidoActual && !npc.PedidoEntregado)
+                if (npc.CheckIfAvalible(platoListoParaEntregar))
                 {
-                    npc.PedidoEntregado = true;
-                    npc.GetComponent<ControllerNPC>().RecibioComida = true;
+                    npc.FoodDelivered();
                     Debug.Log("Pedido entregado al NPC: " + platoListoParaEntregar);
                     playerAnimator.SetBool("HasOrder", false);
                     playerAnimator.SetTrigger("Delivering");
 
+                    SoundManager.Instance.PlaySound("PedidoEntregado", 2);
                     // Actualiza la reputación global usando la reputación del NPC
                     if (reputationSystem != null)
                         reputationSystem.AddReputation(npc.Reputacion);
 
-                    platoListoParaEntregar = "";
-                    pedidoActualMesero = "";
+                    Clear();
                 }
             }
         }
+    }
+    public bool IsLookingAt(float degrees , Vector3 target)
+    {
+        Vector2 objDir = (target - transform.position).normalized;
+        float producto = Vector2.Dot(objDir, dir);
+        float toRadians = Mathf.Acos(producto);
+        float toDegrees = toRadians * Mathf.Rad2Deg;
+        return toDegrees <= degrees;
+    }
+    public void Clear()
+    {
+        platoListoParaEntregar = "";
+        pedidoActualMesero = "";
     }
 }
