@@ -3,19 +3,25 @@ using TMPro;
 
 public class DialogSystemUI : MonoBehaviour
 {
+    public GameObject dialogPanel;
     public TMP_Text dialogText;
-    void Start()
-    {
+    private bool isDialogVisible = false;
+    public bool IsDialogVisible => isDialogVisible;
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
     public void ShowDialog(string message)
     {
         dialogText.text = message;
+        dialogPanel.SetActive(true);
+        isDialogVisible = true;
+    }
+
+    public void HideDialog()
+    {
+        dialogPanel.SetActive(false);
+        isDialogVisible = false;
+    }
+
+    void Update()
+    {
     }
 }

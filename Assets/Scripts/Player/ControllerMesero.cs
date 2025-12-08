@@ -2,9 +2,12 @@ using System;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
 
 public class ControllerMesero : MonoBehaviour
 {
+    public DialogSystemUI dialogSystemUI; 
+    public TextMeshProUGUI pedidoText;
     public InputSystem_Actions inputs;
     private Vector2 moveInput;
     private float range = 1.5f;
@@ -13,6 +16,7 @@ public class ControllerMesero : MonoBehaviour
     [SerializeField] private float moveSpeed = 3f;
     [SerializeField] private Mesero mesero;
     private Animator playerAnimator;
+    private bool isDialogVisible = false;
 
     private string pedidoActualMesero;
 
@@ -77,6 +81,25 @@ public class ControllerMesero : MonoBehaviour
             return;
 
         MovePlayer();
+
+        // Ocultar el panel si te alejas de todos los NPC/CHEF
+        if (dialogSystemUI != null && dialogSystemUI.IsDialogVisible)
+        {
+            bool npcOrChefCerca = false;
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, range);
+            foreach (Collider2D collider in colliders)
+            {
+                if (collider.CompareTag("NPC") || collider.CompareTag("CHEF"))
+                {
+                    npcOrChefCerca = true;
+                    break;
+                }
+            }
+            if (!npcOrChefCerca)
+            {
+                dialogSystemUI.HideDialog();
+            }
+        }
     }
 
     public void MovePlayer()
@@ -93,69 +116,65 @@ public class ControllerMesero : MonoBehaviour
         Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, range);
         foreach (Collider2D collider in colliders)
         {
-            if (collider.CompareTag("NPC") || collider.CompareTag("CHEF"))
-            {
-                Vector2 objDir = (collider.transform.position - transform.position).normalized;
-                float producto = Vector2.Dot(objDir, dir);
-                float toRadians = Mathf.Acos(producto);
-                float toDegrees = toRadians * Mathf.Rad2Deg;
-                if (toDegrees <= degree)
-                {
-                    if (collider.CompareTag("NPC"))
-                    {
-                        // Solo acepta un pedido si no tiene uno pendiente
-                        if (pedidoActualMesero == null || pedidoActualMesero == "") // Solo toma un nuevo pedido si no hay uno actual
-                        {
-                            NPC npc = collider.GetComponent<NPC>();
-                            if (npc != null)
-                            {
-                                pedidoActualMesero = npc.PedidoActual;
-                                Debug.Log("Pedido recibido: " + pedidoActualMesero);
-                            }
-                        }
-                        else
-                        {
-                            Debug.Log("Debes entregar el pedido actual antes de tomar uno nuevo.");
-                        }
-                    }
-                    else if (collider.CompareTag("CHEF"))
-                    {
-                        CHEF chef = collider.GetComponent<CHEF>();
-                        if (chef != null && pedidoActualMesero != null && pedidoActualMesero != "")
-                        {
-                            if (!chef.ComidaPreparada)
-                            {
-                                chef.PreparacionPedido(pedidoActualMesero);
-                            }
-                            else
-                            {
-                                chef.deliverFood(pedidoActualMesero);
-                                platoListoParaEntregar = pedidoActualMesero; // Guarda el plato listo
-                                pedidoActualMesero = "";
-                                playerAnimator.SetBool("HasOrder", true);
-                                Debug.Log("Plato listo para entregar al NPC: " + platoListoParaEntregar);
-                            }
-                        }
-                    }
-                }
-            }
+            
+            if (!(collider.CompareTag("NPC") || collider.CompareTag("CHEF"))) continue;
+
+            Vector2 objDir = (collider.transform.position - transform.position).normalized;
+            float toDegrees = Mathf.Acos(Vector2.Dot(objDir, dir)) * Mathf.Rad2Deg;
+            if (toDegrees > degree) continue;
+
+            // Interacción con NPC
             if (collider.CompareTag("NPC"))
             {
                 NPC npc = collider.GetComponent<NPC>();
-                if (npc != null && platoListoParaEntregar == npc.PedidoActual && !npc.PedidoEntregado)
+                if (npc == null) continue;
+
+                // Entregar pedido si corresponde
+                if (platoListoParaEntregar == npc.PedidoActual && !npc.PedidoEntregado)
                 {
                     npc.PedidoEntregado = true;
                     npc.GetComponent<ControllerNPC>().RecibioComida = true;
-                    Debug.Log("Pedido entregado al NPC: " + platoListoParaEntregar);
+                    pedidoActualMesero = "";
+                    dialogSystemUI.ShowDialog("Pedido entregado al NPC: " + platoListoParaEntregar);
                     playerAnimator.SetBool("HasOrder", false);
                     playerAnimator.SetTrigger("Delivering");
-
-                    // Actualiza la reputación global usando la reputación del NPC
-                    if (reputationSystem != null)
-                        reputationSystem.AddReputation(npc.Reputacion);
-
+                    reputationSystem?.AddReputation(npc.Reputacion);
                     platoListoParaEntregar = "";
                     pedidoActualMesero = "";
+                    continue; // Ya se entregó, no hace falta seguir
+                }
+
+                // Tomar pedido si no hay uno pendiente
+                if (pedidoActualMesero == null || pedidoActualMesero == "")
+                {
+                    pedidoActualMesero = npc.PedidoActual;
+                    pedidoText.text = "El NPC pidio "+ pedidoActualMesero;
+                    if (dialogSystemUI != null)
+                        dialogSystemUI.ShowDialog("¡Hola! El NPC pidió " + pedidoActualMesero);
+                }
+            }
+            // Interacción con CHEF
+            else if (collider.CompareTag("CHEF"))
+            {
+                CHEF chef = collider.GetComponent<CHEF>();
+                if (chef == null || pedidoActualMesero == null || pedidoActualMesero == "") continue;
+
+                if (!chef.ComidaPreparada)
+                {
+                    pedidoText.text = "";
+                    chef.PreparacionPedido(pedidoActualMesero);
+                    if (dialogSystemUI != null)
+                        dialogSystemUI.ShowDialog("El CHEF está preparando: " + pedidoActualMesero);
+                }
+                else
+                {
+                    chef.deliverFood(pedidoActualMesero);
+                    platoListoParaEntregar = pedidoActualMesero;
+                    pedidoActualMesero = "";
+                    playerAnimator.SetBool("HasOrder", true);
+                    pedidoText.text = "Plato listo para entregar al NPC: " + platoListoParaEntregar;
+                    if (dialogSystemUI != null)
+                        dialogSystemUI.ShowDialog("¡El CHEF ha terminado! Plato listo: " + platoListoParaEntregar);
                 }
             }
         }
