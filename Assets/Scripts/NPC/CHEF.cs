@@ -1,10 +1,9 @@
-using TMPro;
 using UnityEngine;
 
 public class CHEF : MainNPC, IDeliverFood
 {
-    public TextMeshProUGUI pedidoText;
     public FoodList foodList;
+    public ControllerMesero ControllerMesero;
     private bool comidaPreparada = false;
     private string pedidoEnPreparacion;
     private float tiempoPreparacion = 3f; // segundos
@@ -27,6 +26,14 @@ public class CHEF : MainNPC, IDeliverFood
             comidaPreparada = false;
             pedidoEnPreparacion = null;
         }
+        else if (preparando)
+        {
+            Debug.Log("El chef aún está preparando el plato.");
+        }
+        else
+        {
+            Debug.Log("No hay plato para entregar.");
+        }
     }
 
     // Método específico para preparar el pedido solicitado
@@ -38,8 +45,7 @@ public class CHEF : MainNPC, IDeliverFood
             preparando = true;
             comidaPreparada = false;
             contadorPreparacion = 0f;
-            pedidoText.text = "";
-            pedidoText.text = "El chef está preparando: " + pedidoEnPreparacion;
+            Debug.Log("El chef está preparando: " + pedidoEnPreparacion);
         }
     }
 
