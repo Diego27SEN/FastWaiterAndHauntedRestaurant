@@ -1,0 +1,1365 @@
+fileFormatVersion: 2
+guid: ddd078788d3516b41b094c2c0b9e29d4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5818507425083901208
+    second: bandejaIdle_0
+  - first:
+      213: 7868040221536510698
+    second: bandejaIdle_1
+  - first:
+      213: 4274223824966941090
+    second: bandejaIdle_2
+  - first:
+      213: 8461760251002905342
+    second: bandejaIdle_3
+  - first:
+      213: -4969541185281302220
+    second: bandejaIdle_4
+  - first:
+      213: -1334713143417425328
+    second: bandejaIdle_5
+  - first:
+      213: -366714957608063141
+    second: bandejaIdle_6
+  - first:
+      213: 8471551458113199540
+    second: bandejaIdle_7
+  - first:
+      213: -5694855180284519631
+    second: bandejaIdle_8
+  - first:
+      213: -6962552724741081781
+    second: bandejaIdle_9
+  - first:
+      213: -7498857514427150888
+    second: bandejaIdle_10
+  - first:
+      213: -5847938694158078127
+    second: bandejaIdle_11
+  - first:
+      213: 3575880394429648104
+    second: bandejaIdle_12
+  - first:
+      213: -7448568633118321926
+    second: bandejaIdle_13
+  - first:
+      213: -2066230603195629364
+    second: bandejaIdle_14
+  - first:
+      213: -4367849894859257920
+    second: bandejaIdle_15
+  - first:
+      213: 3709898457430243540
+    second: bandejaIdle_16
+  - first:
+      213: 4618645413382526027
+    second: bandejaIdle_17
+  - first:
+      213: -4708663187766174573
+    second: bandejaIdle_18
+  - first:
+      213: 5073680032928228705
+    second: bandejaIdle_19
+  - first:
+      213: 2434597771870856066
+    second: bandejaIdle_20
+  - first:
+      213: 3914239161351829076
+    second: bandejaIdle_21
+  - first:
+      213: 941272875897269470
+    second: bandejaIdle_22
+  - first:
+      213: -2679792525254929868
+    second: bandejaIdle_23
+  - first:
+      213: -3265516062376420127
+    second: bandejaIdle_24
+  - first:
+      213: -7791652258830417981
+    second: bandejaIdle_25
+  - first:
+      213: 6480305359135837287
+    second: bandejaIdle_26
+  - first:
+      213: -5797308510843409664
+    second: bandejaIdle_27
+  - first:
+      213: 8063031195832207858
+    second: bandejaIdle_28
+  - first:
+      213: -8098435765508374439
+    second: bandejaIdle_29
+  - first:
+      213: -2315969660896539925
+    second: bandejaIdle_30
+  - first:
+      213: 7071341760217104163
+    second: bandejaIdle_31
+  - first:
+      213: -2943664999865128653
+    second: bandejaIdle_32
+  - first:
+      213: 7699013498452892941
+    second: bandejaIdle_33
+  - first:
+      213: -6507372550516730951
+    second: bandejaIdle_34
+  - first:
+      213: 5877902941307580594
+    second: bandejaIdle_35
+  - first:
+      213: -5698427129170525460
+    second: bandejaIdle_36
+  - first:
+      213: 3611999533235959839
+    second: bandejaIdle_37
+  - first:
+      213: -8880556876580481974
+    second: bandejaIdle_38
+  - first:
+      213: 4252479643657584419
+    second: bandejaIdle_39
+  - first:
+      213: 5040829852370220927
+    second: bandejaIdle_40
+  - first:
+      213: 584745808057406704
+    second: bandejaIdle_41
+  - first:
+      213: 336041150633552534
+    second: bandejaIdle_42
+  - first:
+      213: 5935811688836826111
+    second: bandejaIdle_43
+  - first:
+      213: -2864405451484690640
+    second: bandejaIdle_44
+  - first:
+      213: 7121503808556127399
+    second: bandejaIdle_45
+  - first:
+      213: -2781794626459071395
+    second: bandejaIdle_46
+  - first:
+      213: 5412378732168740485
+    second: bandejaIdle_47
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 10
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bandejaIdle_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 342
+        width: 12
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eab6ec1352804fa0800000000000000
+      internalID: -5818507425083901208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_1
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 342
+        width: 12
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae26b2315e4e03d60800000000000000
+      internalID: 7868040221536510698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_2
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 342
+        width: 12
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a97aa94ce7115b30800000000000000
+      internalID: 4274223824966941090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_3
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 342
+        width: 12
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef26c8fad163e6570800000000000000
+      internalID: 8461760251002905342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_4
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 342
+        width: 12
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43162aa2f94a80bb0800000000000000
+      internalID: -4969541185281302220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_5
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 342
+        width: 12
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0523f89b7752a7de0800000000000000
+      internalID: -1334713143417425328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_6
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 342
+        width: 12
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5fe2f160ba29eaf0800000000000000
+      internalID: -366714957608063141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_7
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 342
+        width: 12
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bd974dba2ff09570800000000000000
+      internalID: 8471551458113199540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_8
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 277
+        width: 12
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13b19dbd26fc7f0b0800000000000000
+      internalID: -5694855180284519631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_9
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 277
+        width: 12
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4531ef9f2b006f90800000000000000
+      internalID: -6962552724741081781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_10
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 277
+        width: 12
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dd0d4f32d4bee790800000000000000
+      internalID: -7498857514427150888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_11
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 277
+        width: 12
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15f227acdb2f7dea0800000000000000
+      internalID: -5847938694158078127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_12
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 277
+        width: 12
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ec434dd54410a130800000000000000
+      internalID: 3575880394429648104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_13
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 277
+        width: 12
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af29dd9da4e51a890800000000000000
+      internalID: -7448568633118321926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_14
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 277
+        width: 12
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc0cb78b6364353e0800000000000000
+      internalID: -2066230603195629364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_15
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 277
+        width: 12
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c7cfa899a74263c0800000000000000
+      internalID: -4367849894859257920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_16
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 213
+        width: 13
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d836ebbdf43c7330800000000000000
+      internalID: 3709898457430243540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_17
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 213
+        width: 13
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4417286889b81040800000000000000
+      internalID: 4618645413382526027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_18
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 213
+        width: 12
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39c1d3e37c777aeb0800000000000000
+      internalID: -4708663187766174573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_19
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 213
+        width: 13
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 165eda2cb15596640800000000000000
+      internalID: 5073680032928228705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_20
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 213
+        width: 13
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 283e15346cd69c120800000000000000
+      internalID: 2434597771870856066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_21
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 213
+        width: 13
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4567c4a57cb225630800000000000000
+      internalID: 3914239161351829076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_22
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 213
+        width: 13
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edc219c81b2101d00800000000000000
+      internalID: 941272875897269470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_23
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 213
+        width: 13
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 432de6c75e67fcad0800000000000000
+      internalID: -2679792525254929868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_24
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 150
+        width: 12
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ec98b5517e8ea2d0800000000000000
+      internalID: -3265516062376420127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_25
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 150
+        width: 12
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cffa037d8d7ed390800000000000000
+      internalID: -7791652258830417981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_26
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 150
+        width: 12
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76c0a57d36baee950800000000000000
+      internalID: 6480305359135837287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_27
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 150
+        width: 12
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00b64d5ff92db8fa0800000000000000
+      internalID: -5797308510843409664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_28
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 150
+        width: 12
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f9c8702724a5ef60800000000000000
+      internalID: 8063031195832207858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_29
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 150
+        width: 12
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9500e8024939c9f80800000000000000
+      internalID: -8098435765508374439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_30
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 150
+        width: 12
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bea0eab2dd50cdfd0800000000000000
+      internalID: -2315969660896539925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_31
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 150
+        width: 12
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32f30278dd3722260800000000000000
+      internalID: 7071341760217104163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_32
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 86
+        width: 13
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 339e94167400627d0800000000000000
+      internalID: -2943664999865128653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_33
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 86
+        width: 13
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0dd8385cf368da60800000000000000
+      internalID: 7699013498452892941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_34
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 86
+        width: 13
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b39251942b21b5a0800000000000000
+      internalID: -6507372550516730951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_35
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 86
+        width: 13
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b0bcd82591829150800000000000000
+      internalID: 5877902941307580594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_36
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 86
+        width: 13
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce28753b7be1be0b0800000000000000
+      internalID: -5698427129170525460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_37
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 86
+        width: 12
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f18f7633076602230800000000000000
+      internalID: 3611999533235959839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_38
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 86
+        width: 13
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4494cb629ce1c480800000000000000
+      internalID: -8880556876580481974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_39
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 86
+        width: 13
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32f3ace84b7d30b30800000000000000
+      internalID: 4252479643657584419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_40
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 25
+        width: 12
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7736b31b00a4f540800000000000000
+      internalID: 5040829852370220927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_41
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 25
+        width: 12
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f4192dd63f6d1800800000000000000
+      internalID: 584745808057406704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_42
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 25
+        width: 12
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69a2d6565abd9a400800000000000000
+      internalID: 336041150633552534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_43
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 25
+        width: 12
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff30bbe184d306250800000000000000
+      internalID: 5935811688836826111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_44
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 25
+        width: 12
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 037009b0b669f38d0800000000000000
+      internalID: -2864405451484690640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_45
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 25
+        width: 12
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a454978bf9a4d260800000000000000
+      internalID: 7121503808556127399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_46
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 25
+        width: 12
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5c01db96841569d0800000000000000
+      internalID: -2781794626459071395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandejaIdle_47
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 25
+        width: 12
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58efbc8e7c1ac1b40800000000000000
+      internalID: 5412378732168740485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 99e04abb403fcf2478f29385de3e2029
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      bandejaIdle_0: -5818507425083901208
+      bandejaIdle_1: 7868040221536510698
+      bandejaIdle_10: -7498857514427150888
+      bandejaIdle_11: -5847938694158078127
+      bandejaIdle_12: 3575880394429648104
+      bandejaIdle_13: -7448568633118321926
+      bandejaIdle_14: -2066230603195629364
+      bandejaIdle_15: -4367849894859257920
+      bandejaIdle_16: 3709898457430243540
+      bandejaIdle_17: 4618645413382526027
+      bandejaIdle_18: -4708663187766174573
+      bandejaIdle_19: 5073680032928228705
+      bandejaIdle_2: 4274223824966941090
+      bandejaIdle_20: 2434597771870856066
+      bandejaIdle_21: 3914239161351829076
+      bandejaIdle_22: 941272875897269470
+      bandejaIdle_23: -2679792525254929868
+      bandejaIdle_24: -3265516062376420127
+      bandejaIdle_25: -7791652258830417981
+      bandejaIdle_26: 6480305359135837287
+      bandejaIdle_27: -5797308510843409664
+      bandejaIdle_28: 8063031195832207858
+      bandejaIdle_29: -8098435765508374439
+      bandejaIdle_3: 8461760251002905342
+      bandejaIdle_30: -2315969660896539925
+      bandejaIdle_31: 7071341760217104163
+      bandejaIdle_32: -2943664999865128653
+      bandejaIdle_33: 7699013498452892941
+      bandejaIdle_34: -6507372550516730951
+      bandejaIdle_35: 5877902941307580594
+      bandejaIdle_36: -5698427129170525460
+      bandejaIdle_37: 3611999533235959839
+      bandejaIdle_38: -8880556876580481974
+      bandejaIdle_39: 4252479643657584419
+      bandejaIdle_4: -4969541185281302220
+      bandejaIdle_40: 5040829852370220927
+      bandejaIdle_41: 584745808057406704
+      bandejaIdle_42: 336041150633552534
+      bandejaIdle_43: 5935811688836826111
+      bandejaIdle_44: -2864405451484690640
+      bandejaIdle_45: 7121503808556127399
+      bandejaIdle_46: -2781794626459071395
+      bandejaIdle_47: 5412378732168740485
+      bandejaIdle_5: -1334713143417425328
+      bandejaIdle_6: -366714957608063141
+      bandejaIdle_7: 8471551458113199540
+      bandejaIdle_8: -5694855180284519631
+      bandejaIdle_9: -6962552724741081781
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

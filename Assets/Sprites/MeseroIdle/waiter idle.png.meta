@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: c8db3294fcbb3b547af6acffca49453c
+guid: dbb99d6532c6eb542bacb909b2cc8d32
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2488384367479145012
-    second: bandejin_0
+      213: -1383478650185729254
+    second: waiter idle_0
   - first:
-      213: -8670517225178292579
-    second: bandejin_1
+      213: 5074162753823532505
+    second: waiter idle_1
   - first:
-      213: 6176410979729706455
-    second: bandejin_2
+      213: -6728169767829173607
+    second: waiter idle_2
   - first:
-      213: 6648468704656227722
-    second: bandejin_3
+      213: -404442181764861904
+    second: waiter idle_3
   - first:
-      213: 1266318805275617267
-    second: bandejin_4
+      213: 119559037131265141
+    second: waiter idle_4
   - first:
-      213: 2470006521812896845
-    second: bandejin_5
+      213: -7027963131647313370
+    second: waiter idle_5
   - first:
-      213: 7011375803877831086
-    second: bandejin_6
+      213: -6592923930020383769
+    second: waiter idle_6
   - first:
-      213: -3736649775597362668
-    second: bandejin_7
+      213: -6733853674775033898
+    second: waiter idle_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -121,7 +121,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bandejin_0
+      name: waiter idle_0
       rect:
         serializedVersion: 2
         x: 18
@@ -136,39 +136,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 432ca30f564888220800000000000000
-      internalID: 2488384367479145012
+      spriteID: a1bb7556f75eccce0800000000000000
+      internalID: -1383478650185729254
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bandejin_1
+      name: waiter idle_1
       rect:
         serializedVersion: 2
         x: 66
-        y: 14
-        width: 12
-        height: 20
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d9e9756a5822ca780800000000000000
-      internalID: -8670517225178292579
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bandejin_2
-      rect:
-        serializedVersion: 2
-        x: 114
         y: 14
         width: 12
         height: 19
@@ -180,17 +158,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7dd8c91ef0507b550800000000000000
-      internalID: 6176410979729706455
+      spriteID: 9d56b2af32c0b6640800000000000000
+      internalID: 5074162753823532505
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bandejin_3
+      name: waiter idle_2
       rect:
         serializedVersion: 2
-        x: 162
+        x: 114
         y: 14
         width: 12
         height: 20
@@ -202,17 +180,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a8df551df0b144c50800000000000000
-      internalID: 6648468704656227722
+      spriteID: 99a05085e3db0a2a0800000000000000
+      internalID: -6728169767829173607
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bandejin_4
+      name: waiter idle_3
       rect:
         serializedVersion: 2
-        x: 210
+        x: 162
         y: 14
         width: 12
         height: 21
@@ -224,17 +202,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3f7a9d08e3ed29110800000000000000
-      internalID: 1266318805275617267
+      spriteID: 030b8bf7af1236af0800000000000000
+      internalID: -404442181764861904
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bandejin_5
+      name: waiter idle_4
       rect:
         serializedVersion: 2
-        x: 258
+        x: 210
         y: 14
         width: 12
         height: 20
@@ -246,17 +224,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d4c4e8d48d9374220800000000000000
-      internalID: 2470006521812896845
+      spriteID: 57495e19f42c8a100800000000000000
+      internalID: 119559037131265141
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bandejin_6
+      name: waiter idle_5
       rect:
         serializedVersion: 2
-        x: 306
+        x: 258
         y: 14
         width: 12
         height: 19
@@ -268,14 +246,36 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ea138e055296d4160800000000000000
-      internalID: 7011375803877831086
+      spriteID: 62abe9b74c8a77e90800000000000000
+      internalID: -7027963131647313370
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bandejin_7
+      name: waiter idle_6
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 14
+        width: 12
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e376ffcd9a3184a0800000000000000
+      internalID: -6592923930020383769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waiter idle_7
       rect:
         serializedVersion: 2
         x: 354
@@ -290,8 +290,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 412e973a3d0c42cc0800000000000000
-      internalID: -3736649775597362668
+      spriteID: 6d74391a2cb8c82a0800000000000000
+      internalID: -6733853674775033898
       vertices: []
       indices: 
       edges: []
@@ -300,7 +300,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f8b761ae0830d7941a7b3c6569e5716b
+    spriteID: 81dc8ac010f8cf54f8d38fd2c0b3ffe9
     internalID: 0
     vertices: []
     indices: 
@@ -310,14 +310,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bandejin_0: 2488384367479145012
-      bandejin_1: -8670517225178292579
-      bandejin_2: 6176410979729706455
-      bandejin_3: 6648468704656227722
-      bandejin_4: 1266318805275617267
-      bandejin_5: 2470006521812896845
-      bandejin_6: 7011375803877831086
-      bandejin_7: -3736649775597362668
+      waiter idle_0: -1383478650185729254
+      waiter idle_1: 5074162753823532505
+      waiter idle_2: -6728169767829173607
+      waiter idle_3: -404442181764861904
+      waiter idle_4: 119559037131265141
+      waiter idle_5: -7027963131647313370
+      waiter idle_6: -6592923930020383769
+      waiter idle_7: -6733853674775033898
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
