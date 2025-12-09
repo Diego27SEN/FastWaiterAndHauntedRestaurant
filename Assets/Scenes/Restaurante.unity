@@ -4249,8 +4249,8 @@ GameObject:
   - component: {fileID: 1547403283}
   - component: {fileID: 1547403281}
   - component: {fileID: 1547403280}
+  - component: {fileID: 1547403289}
   - component: {fileID: 1547403282}
-  - component: {fileID: 1547403286}
   - component: {fileID: 1547403288}
   - component: {fileID: 1547403287}
   m_Layer: 0
@@ -4321,7 +4321,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.00050807, y: 0.46036154}
+  m_Offset: {x: 0.00050807, y: 0.5413045}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -4331,7 +4331,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.2249057, y: 0.9757186}
+  m_Size: {x: 1.2249057, y: 1.1376046}
   m_EdgeRadius: 0
 --- !u!114 &1547403282
 MonoBehaviour:
@@ -4417,18 +4417,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1547403286
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1547403279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4345aa9ae2421364a99f31e32cc74bf1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &1547403287
 Animator:
   serializedVersion: 7
@@ -4466,6 +4454,18 @@ MonoBehaviour:
   moveSpeed: 3
   mesero: {fileID: 1547403282}
   platoListoParaEntregar: 
+--- !u!114 &1547403289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547403279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4345aa9ae2421364a99f31e32cc74bf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1574380453
 PrefabInstance:
   m_ObjectHideFlags: 0
