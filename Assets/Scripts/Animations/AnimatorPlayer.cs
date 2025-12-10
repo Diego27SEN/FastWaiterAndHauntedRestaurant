@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerAnimator : MonoBehaviour
+public class AnimatorPlayer : MonoBehaviour
 {
     private Vector2 moveInput;
     private Animator playerAnimator;
