@@ -1,8 +1,9 @@
 using UnityEngine;
+using UnityEngine.SceneManagement; // <-- Importante
 
 public class EstadoJuego : MonoBehaviour
 {
-    private Cronometro cronometro;
+    [SerializeField]private Cronometro cronometro;
     private Reputation reputacion;
     private bool resultadoMostrado = false;
 
@@ -25,13 +26,13 @@ public class EstadoJuego : MonoBehaviour
         if (tiempoActual >= 420f)
         {
             int valorReputacion = reputacion.GetReputation();
-            if (valorReputacion < 1000)
+            if (valorReputacion >= 1000)
             {
-                Debug.Log("¡Has perdido! Tu reputación es menor a 1000.");
+                SceneManager.LoadScene("Victoria");
             }
             else
             {
-                Debug.Log("¡Has ganado! Tu reputación es 1000 o mayor.");
+                SceneManager.LoadScene("Derrota");
             }
             resultadoMostrado = true;
         }
