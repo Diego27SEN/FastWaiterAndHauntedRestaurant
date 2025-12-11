@@ -135,6 +135,7 @@ public class ControllerMesero : MonoBehaviour
                     npc.PedidoEntregado = true;
                     npc.GetComponent<ControllerNPC>().RecibioComida = true;
                     pedidoActualMesero = "";
+                    //SoundManager.Instance.PlaySound("PedidoEntregado", 1f);
                     dialogSystemUI.ShowDialog("Pedido entregado al NPC: " + platoListoParaEntregar);
                     playerAnimator.SetBool("HasOrder", false);
                     playerAnimator.SetTrigger("Delivered");
@@ -149,6 +150,8 @@ public class ControllerMesero : MonoBehaviour
                 {
                     pedidoActualMesero = npc.PedidoActual;
                     pedidoText.text = "El NPC pidio " + pedidoActualMesero;
+                    //SoundManager.Instance.PlaySound("PedidoRecibido", 1f);
+
                     if (dialogSystemUI != null)
                         dialogSystemUI.ShowDialog("¡Hola! El NPC pidió " + pedidoActualMesero);
                 }
@@ -171,6 +174,7 @@ public class ControllerMesero : MonoBehaviour
                     chef.deliverFood(pedidoActualMesero);
                     platoListoParaEntregar = pedidoActualMesero;
                     pedidoActualMesero = "";
+                    //SoundManager.Instance.PlaySound("PedidoRecibido", 1f);
                     playerAnimator.SetBool("HasOrder", true);
                     pedidoText.text = "Plato listo para entregar al NPC: " + platoListoParaEntregar;
                     if (dialogSystemUI != null)

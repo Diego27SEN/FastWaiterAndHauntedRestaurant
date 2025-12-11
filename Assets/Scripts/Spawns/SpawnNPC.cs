@@ -5,6 +5,7 @@ public class SpawnNPC : MonoBehaviour
     [SerializeField] private GameObject NPCPrefab;
     [SerializeField] private float timeToSpawn;
     [SerializeField] private float currentTime;
+    [SerializeField] private ClienteData[] clientesDisponibles;
     [SerializeField] private Transform[] puntosB;
     private int indicePunto = 0;
 
@@ -23,7 +24,10 @@ public class SpawnNPC : MonoBehaviour
     }
     public void SpawnNPCInstance()
     {
-        GameObject npc = Instantiate(NPCPrefab, transform.position, Quaternion.identity); 
+        GameObject npc = Instantiate(NPCPrefab, transform.position, Quaternion.identity);
+        ClienteData clienteRandom = clientesDisponibles[Random.Range(0, clientesDisponibles.Length)]; // elige un cliente random
+        npc.GetComponentInChildren<SpriteRenderer>().sprite = clienteRandom.spriteCuerpo;
+        npc.name = clienteRandom.nombreCliente;
 
         ControllerNPC npcScript = npc.GetComponent<ControllerNPC>();
         if (npcScript != null && puntosB.Length > 0)
