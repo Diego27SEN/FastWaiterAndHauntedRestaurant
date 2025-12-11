@@ -4,72 +4,57 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
     public static SoundManager Instance;
-
-    public AudioClip pedidoRecibidoClip;
-    public AudioClip pedidoEntregadoClip;
-    public AudioClip ghostClip;
-
-
-    public Dictionary<string, AudioClip> musicData = new();
-
-
-    public GameObject AudioReproducerPrefab;
-
-    public int PoolSize = 10;
-
-    public List<GameObject> AudioPool = new();
-
-    private void Awake()
+    [Header("Library de sonidos")]
+    public SoundLibrary library; // Base de datos de sonidos
+    [Header("Prefab para reproducir sonidos")]
+    public GameObject soundPlayerPrefab;
+    [Header("Tamaño de Pool")]
+    public int poolSize = 10; // Cantidad de objetos reutilizables
+    private GameObject[] pool; // Arreglo donde guardamos los SoundPlayers
+    private int poolIndex = 0; // Puntero circular para elegir el siguiente objeto
+    public List<SoundPlayer> AudioPool = new List<SoundPlayer>();
+    void Awake()
     {
-        if (Instance == null)
-            Instance = this;
+        // Singleton para acceso global
+        if (Instance == null) Instance = this;
+        else Destroy(gameObject);
+        library.Initialize(); // Convierte la lista en diccionario
+        InitializePool();     // Crea los objetos iniciales
+    }
+    void InitializePool()
+    {
+        pool = new GameObject[poolSize];
 
-
-        for (int i = 0; i < PoolSize; i++)
+        // Instancia los SoundPlayers desactivados al inicio
+        for (int i = 0; i < poolSize; i++)
         {
-            GameObject obj = Instantiate(AudioReproducerPrefab, transform);
-
-            AudioPool.Add(obj);
+            pool[i] = Instantiate(soundPlayerPrefab, transform);
+            pool[i].SetActive(false); // No están reproduciendo aún
         }
     }
-    void Start()
+    GameObject GetFromPool()
     {
-        musicData.Add("PedidoRecibido", pedidoRecibidoClip);
-        musicData.Add("PedidoEntregado", pedidoEntregadoClip);
-        musicData.Add("GhostSpawn", ghostClip);
-
+        // Usamos un "índice circular"
+        GameObject obj = pool[poolIndex];
+        // poolIndex avanza 1,2,3,4... pero cuando llega al final vuelve a 0
+        poolIndex = (poolIndex + 1) % poolSize;
+        return obj;
     }
-    public void PlaySound(string musicName, float volume)
+
+    public void Play(string id)
     {
-        if (musicData.TryGetValue(musicName, out AudioClip clip))
+        var s = library.Get(id);
+        if (s == null)
         {
-            print(clip.name);
-
-            AudioSource audioSource = GetAvalibleSoundReproducer().GetComponent<AudioSource>();
-
-            if (audioSource == null)
-            {
-                print("se acabaron los objetos en la pool");
-                return;
-            }
-
-            audioSource.clip = clip;
-            audioSource.volume = volume;
-            audioSource.gameObject.SetActive(true);
-            audioSource.GetComponent<AudioReproducer>().SetAudio();
+            Debug.LogWarning("Sonido no encontrado: " + id);
+            return;
         }
-        else
-        {
-            print(" no existe");
-        }
-    }
-    public GameObject GetAvalibleSoundReproducer()
-    {
-        foreach (var item in AudioPool)
-        {
-            if (item.activeSelf == false)
-                return item;
-        }
-        return null;
+        // Obtiene un objeto del pool
+        GameObject p = GetFromPool();
+        p.SetActive(true);
+
+        // Inicializa el reproductor con clip/volumen/pitch
+        var player = p.GetComponent<SoundPlayer>();
+        player.Initialize(s.clip, s.volume, s.pitch);
     }
 }

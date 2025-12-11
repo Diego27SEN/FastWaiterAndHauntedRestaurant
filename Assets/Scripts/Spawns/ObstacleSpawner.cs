@@ -17,6 +17,8 @@ public class ObstacleSpawner : MonoBehaviour
 
     void SpawnObstacle()
     {
+        print("espiritu de fuego!!");
+        SoundManager.Instance.Play("Fantasmal"); 
         if (currentObstacle != null) return; // Si ya hay un obstáculo, no crear otro
         int randomIndex = Random.Range(0, spawnPoints.Length); // Elegir un punto aleatorio
         Transform spawnPoint = spawnPoints[randomIndex];

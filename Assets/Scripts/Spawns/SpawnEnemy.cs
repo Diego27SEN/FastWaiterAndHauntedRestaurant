@@ -29,6 +29,7 @@ public class SpawnEnemy : MonoBehaviour
     public void SpawnMob()
     {
         print("Mounstro Invocado");
+        SoundManager.Instance.Play("Fantasmal");// Reproduce el sonido de invocacion
         float randonAngle = Random.Range(0, 2 * Mathf.PI);// Angulo aleatorio en radianes
         Vector2 randomDirInAnlge = new Vector2(Mathf.Cos(randonAngle), Mathf.Sin(randonAngle));// Vector2 en direccion aleatoria
         Vector2 randomDirInAnlgeMagnitude = Mesero.transform.position + (Vector3)(randomDirInAnlge * radius);// Vector2 con magnitud segun el radio

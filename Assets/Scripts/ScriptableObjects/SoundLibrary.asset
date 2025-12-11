@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc2a6129b646e864e85b1a9b134cf898, type: 3}
+  m_Name: SoundLibrary
+  m_EditorClassIdentifier: 
+  sounds:
+  - id: pedidoListo
+    clip: {fileID: 8300000, guid: 822aae21057186547872060d1f57744e, type: 3}
+    volume: 1
+    pitch: 1
+  - id: Gracias
+    clip: {fileID: 8300000, guid: bd22eaa3c4ad7e242890309626643f03, type: 3}
+    volume: 1
+    pitch: 1
+  - id: Fantasmal
+    clip: {fileID: 8300000, guid: b2f544cbac32eb945bf9955080fdaa6f, type: 3}
+    volume: 1
+    pitch: 1

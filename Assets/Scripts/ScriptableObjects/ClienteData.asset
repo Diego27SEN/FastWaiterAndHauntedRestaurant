@@ -12,13 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f58833e368cb4c645a5a211b170dea67, type: 3}
   m_Name: ClienteData
   m_EditorClassIdentifier: 
-  Clientes:
-  - Cliente1
-  - Cliente2
-  - Cliente3
-  - Cliente4
-  - Cliente5
-  - Cliente6
-  - Cliente7
-  - Cliente8
-  - Cliente9
+  nombreCliente: Cliente1
+  spriteCuerpo: {fileID: -5656006886968833380, guid: e1cc972be7d7a394cadab524b7aa7fba, type: 3}

@@ -25,7 +25,16 @@ public class AnimatorPlayer : MonoBehaviour
         playerAnimator.SetFloat("Horizontal", moveInput.x);
         playerAnimator.SetFloat("Vertical", moveInput.y );
         playerAnimator.SetFloat("Speed", Mathf.Abs(moveInput.x) + Mathf.Abs(moveInput.y));
+
     }
+    public void StopMovementAnimation()
+    {
+        playerAnimator.SetFloat("Horizontal", 0);
+        playerAnimator.SetFloat("Vertical", 0);
+        playerAnimator.SetFloat("Speed", 0);
+    }
+
+
     void FixedUpdate()
     {
        
