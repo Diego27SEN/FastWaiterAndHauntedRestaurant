@@ -166,9 +166,11 @@ public class ControllerMesero : MonoBehaviour
                 if (!chef.ComidaPreparada)
                 {
                     pedidoText.text = "";
+                    SoundManager.Instance.Play("PedidoParaEntregar");
                     chef.PreparacionPedido(pedidoActualMesero);
                     if (dialogSystemUI != null)
                         dialogSystemUI.ShowDialog("El CHEF está preparando: " + pedidoActualMesero);
+                        
                 }
                 else
                 {
